@@ -4,10 +4,10 @@ trigger:
 - master
 
 variables:
-  project_name: YOUR_PROJECT_NAME
-  job_name: yourjobname 
+  project_name: Testes_sys2
+  job_name: testes 
   job_version: 0.1 
-  commandline_path: /home/tgourdel/commandline # CHANGE WITH YOUR OWN PATH
+  commandline_path: C:\Program Files (x86)\Talend-Studio\studio\commandline # CHANGE WITH YOUR OWN PATH
   docker_registry: tgourdel.azurecr.io # CHANGE WITH YOUR OWN REGISTRY URL
   docker_username: tgourdel # CHANGE WITH YOUR OWN USERNAME
   JAVA_HOME_8_X64: C:\Program Files\Zulu\zulu-11
