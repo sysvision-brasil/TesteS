@@ -16,7 +16,7 @@ variables:
 jobs:
 
 - job: checkout
-  pool: 'Talend CommandLine' # ADAPT IF YOU HAVE A AGENT POOL NAME
+  pool: 'admin' # ADAPT IF YOU HAVE A AGENT POOL NAME
   displayName: 'Git Checkout'
   continueOnError: false
   steps:
@@ -24,7 +24,7 @@ jobs:
     clean: true
 
 - job: build
-  pool: 'Talend CommandLine'
+  pool: 'admin'
   dependsOn: checkout
   displayName: 'Job Build & Publish to ACR'
   continueOnError: false
