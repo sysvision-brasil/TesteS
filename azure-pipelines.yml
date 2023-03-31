@@ -31,7 +31,7 @@ jobs:
   steps:
   - task: Maven@3
     inputs:
-      mavenPomFile: '$(project_name)/poms/pom.xml' 
+      mavenPomFile: '$(Testes_sys2)/poms/pom.xml' 
       goals: 'deploy'
       options: '--settings $(C:\Program Files (x86)\Talend-Studio\studio\commandline)/configuration/maven_user_settings.xml -U -DaltDeploymentRepository=release::default::http://10.150.71.151:8081/repository/release -Pdocker -e -pl jobs/process_mr/$(testes)_$(0.1) -am -Dtalend.docker.name=$(docker_image_name)'
       publishJUnitResults: false 
