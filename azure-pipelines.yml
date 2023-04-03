@@ -16,7 +16,7 @@ variables :
 jobs :
 
 - job : checkout
-  pool : 'admin'  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
+  pool : 'Hosted Agent'  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
   displayName : 'Git Checkout'
   continueOnError : false
   steps :
@@ -24,7 +24,7 @@ jobs :
     clean : true
 
 - job : build
-  pool : 'admin'
+  pool : 'Hosted Agent'
   dependsOn : checkout
   displayName : 'Job Build & Publish to ACR'
   continueOnError : false
