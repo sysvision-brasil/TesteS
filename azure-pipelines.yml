@@ -15,30 +15,30 @@ variables :
 
 jobs :
 
-- job : check-out
-  pool : ' admin '  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
-  displayName : ' Git Checkout '
+- job : checkout
+  pool : 'admin'  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
+  displayName : 'Git Checkout'
   continueOnError : false
   steps :
-  - checkout : auto
+  - checkout : self
     clean : true
 
-- job : construir
-  pool : ' admin '
+- job : build
+  pool : 'admin'
   dependsOn : check-out
-  displayName : ' Job Build & Publish to ACR '
+  displayName : 'Job Build & Publish to ACR'
   continueOnError : false
   steps :
   - task : Maven@3
     inputs :
-      mavenPomFile : ' $(Testes_sys2)/poms/pom.xml ' 
+      mavenPomFile : '$(Testes_sys2)/poms/pom.xml' 
       goals: 'deploy'
       options : ' --settings $(C:\Program Files (x86)\Talend-Studio\studio\commandline)/configuration/maven_user_settings.xml -U -DaltDeploymentRepository=release::default::http://10.150.71.151: 8081/repository/release -Pdocker -e -pl jobs/process_mr/$(testes)_$(0.1) -am -Dtalend.docker.name=$(docker_image_name) '
       publishJUnitResults : false  
-      javaHomeOption : ' JDKVersion '
-      jdkVersionOption : ' 1.11 '
-      jdkDirectory : ' /usr/bin/java '
+      javaHomeOption : 'JDKVersion'
+      jdkVersionOption : '1.11'
+      jdkDirectory : '/usr/bin/java'
       mavenVersionOption : path
-      mavenDirectory : ' /usr/local/src/apache-maven '
+      mavenDirectory : '/usr/local/src/apache-maven'
       mavenOptions : ' -Dgeneration.type=local -Dproduct.path=$(C:\Program Files (x86)\Talend-Studio\studio\commandline) -Ddocker.push.registry=$(docker_registry) -Ddocker.push.username =$(docker_username) -Ddocker.push.password=$(docker_password) -Xmx3096m -Xmx1024m '
       sonarQubeRunAnalysis : false 
