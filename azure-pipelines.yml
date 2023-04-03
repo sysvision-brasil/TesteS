@@ -1,11 +1,11 @@
 # Pipeline básico do Azure para criar trabalho e enviar para o Azure ACR
 
-gatilho :
-- mestre
+trigger :
+- master
 
-variáveis :
+variables :
   project_name : Testes_sys2
-  job_name : testículos
+  job_name : teste_samsung
   job_version : 0.1 
   commandline_path : C:\Program Files (x86)\Talend-Studio\studio\commandline # MUDE COM SEU PRÓPRIO CAMINHO
   docker_registry : tgourdel.azurecr.io # MUDE COM SEU PRÓPRIO URL DE REGISTRO
@@ -13,32 +13,32 @@ variáveis :
   JAVA_HOME_8_X64 : C:\Arquivos de Programas\Zulu\zulu-11
   docker_image_name : seudockerimagename
 
-trabalhos :
+jobs :
 
-- trabalho : check-out
+- job : check-out
   pool : ' admin '  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
   displayName : ' Git Checkout '
   continueOnError : falso
-  passos :
-  - check-out : auto
-    limpo : verdadeiro
+  steps :
+  - checkout : auto
+    clean : true
 
-- trabalho : construir
-  piscina : ' admin '
-  dependeOn : check-out
+- job : construir
+  pool : ' admin '
+  dependsOn : check-out
   displayName : ' Job Build & Publish to ACR '
   continueOnError : falso
-  passos :
-  - tarefa : Maven@3
-    entradas :
+  steps :
+  - task : Maven@3
+    inputs :
       mavenPomFile : ' $(Testes_sys2)/poms/pom.xml ' 
-      objetivos : ' implantar '
-      opções : ' --settings $(C:\Program Files (x86)\Talend-Studio\studio\commandline)/configuration/maven_user_settings.xml -U -DaltDeploymentRepository=release::default::http://10.150.71.151: 8081/repository/release -Pdocker -e -pl jobs/process_mr/$(testes)_$(0.1) -am -Dtalend.docker.name=$(docker_image_name) '
-      publishJUnitResults : falso 
+      goals: 'deploy'
+      options : ' --settings $(C:\Program Files (x86)\Talend-Studio\studio\commandline)/configuration/maven_user_settings.xml -U -DaltDeploymentRepository=release::default::http://10.150.71.151: 8081/repository/release -Pdocker -e -pl jobs/process_mr/$(testes)_$(0.1) -am -Dtalend.docker.name=$(docker_image_name) '
+      publishJUnitResults : false  
       javaHomeOption : ' JDKVersion '
       jdkVersionOption : ' 1.11 '
       jdkDirectory : ' /usr/bin/java '
-      mavenVersionOption : caminho
+      mavenVersionOption : path
       mavenDirectory : ' /usr/local/src/apache-maven '
       mavenOptions : ' -Dgeneration.type=local -Dproduct.path=$(C:\Program Files (x86)\Talend-Studio\studio\commandline) -Ddocker.push.registry=$(docker_registry) -Ddocker.push.username =$(docker_username) -Ddocker.push.password=$(docker_password) -Xmx3096m -Xmx1024m '
-      sonarQubeRunAnalysis : falso 
+      sonarQubeRunAnalysis : false 
