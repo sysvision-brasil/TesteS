@@ -18,7 +18,7 @@ jobs :
 - job : check-out
   pool : ' admin '  # ADAPT SE TIVER UM NOME DE AGENTE DE POOL
   displayName : ' Git Checkout '
-  continueOnError : falso
+  continueOnError : false
   steps :
   - checkout : auto
     clean : true
@@ -27,7 +27,7 @@ jobs :
   pool : ' admin '
   dependsOn : check-out
   displayName : ' Job Build & Publish to ACR '
-  continueOnError : falso
+  continueOnError : false
   steps :
   - task : Maven@3
     inputs :
