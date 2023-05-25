@@ -1,3 +1,0 @@
-#Wed Mar 29 16:30:36 BRT 2023
-displayVersion=8.0.1.20230315_1127-patch
-version=8.0.1
