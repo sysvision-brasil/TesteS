@@ -10,8 +10,8 @@
   </parent>
   <groupId>org.example.teste_jp.job</groupId>
   <artifactId>Limpeza_kafka</artifactId>
-  <version>0.1.0</version>
-  <name>TESTE_JP Limpeza_kafka-0.1.0 (0.1,Job Designs)</name>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>TESTE_JP Limpeza_kafka-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -19,8 +19,8 @@
     <talend.job.folder>guilherme/</talend.job.folder>
     <talend.job.context>DEV</talend.job.context>
     <talend.job.path>teste_jp</talend.job.path>
-    <talend.job.git.commit.id>981f7ce633dcc97b1a02780d575e8756dcf68812</talend.job.git.commit.id>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.job.git.commit.id>c8f38ae434d2cf9a1db078b07cbd921b46b5c843</talend.job.git.commit.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author>security@company.com</talend.job.git.author>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
@@ -39,8 +39,8 @@
     <talend.product.version>8.0.1.20230418_1502-patch</talend.product.version>
     <talend.project.name>TESTE_JP</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <talend.job.git.commit.date>1685451882000</talend.job.git.commit.date>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.job.git.commit.date>1685452083000</talend.job.git.commit.date>
+    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>Limpeza_kafka</talend.job.name>
     <talend.job.finalName>limpeza_kafka_0_1</talend.job.finalName>
