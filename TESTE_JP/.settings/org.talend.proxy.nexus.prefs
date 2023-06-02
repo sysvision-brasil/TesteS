@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+nexus.proxy.enable=true
+nexus.proxy.password=enc\:system.encryption.key.v1\:QQ/Zcf8goVTwdo5Muh4dPHXsZGB4E1bMkKYjCstN8H0Q
+nexus.proxy.type=NEXUS_3
+nexus.proxy.url=http\://10.150.71.153\:8081/
+nexus.proxy.username=admin
