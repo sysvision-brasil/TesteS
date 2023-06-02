@@ -6,7 +6,7 @@
     <groupId>org.example.teste_jp</groupId>
     <artifactId>code.Master</artifactId>
     <version>8.0.1</version>
-    <relativePath>../../../../../../</relativePath>
+    <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>br.com.tereos.proj_to_tests.job</groupId>
   <artifactId>Cleaning_server</artifactId>
@@ -14,16 +14,16 @@
   <name>TESTE_JP Cleaning_server-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.pigudf.groupid>org.example.teste_jp.pigudf</talend.pigudf.groupid>
+    <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.job.folder>guilherme/guilherme/cleaning_server/</talend.job.folder>
     <talend.job.context>DEV</talend.job.context>
     <talend.job.path>teste_jp</talend.job.path>
-    <talend.job.git.commit.id></talend.job.git.commit.id>
     <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
+    <talend.job.git.commit.id></talend.job.git.commit.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author></talend.job.git.author>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
     <talend.job.id>_6LLuEPO2Eeu0C69wHYCB7w</talend.job.id>
     <talend.job.version>0.1</talend.job.version>
     <talend.job.framework></talend.job.framework>
