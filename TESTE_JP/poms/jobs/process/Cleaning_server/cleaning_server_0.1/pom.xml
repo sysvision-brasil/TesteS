@@ -16,10 +16,10 @@
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.pigudf.groupid>org.example.teste_jp.pigudf</talend.pigudf.groupid>
-    <talend.job.folder>guilherme/</talend.job.folder>
+    <talend.job.folder>cleaning_server/</talend.job.folder>
     <talend.job.context>DEV</talend.job.context>
     <talend.job.path>teste_jp</talend.job.path>
-    <talend.job.git.commit.id>a7bd30986c55d476e9dac720a68433f43b6d3d5b</talend.job.git.commit.id>
+    <talend.job.git.commit.id>37597a3fefcbb9decd9fd96e7936b0d8bb65658d</talend.job.git.commit.id>
     <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author>security@company.com</talend.job.git.author>
@@ -39,7 +39,7 @@
     <talend.product.version>8.0.1.20230418_1502-patch</talend.product.version>
     <talend.project.name>TESTE_JP</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <talend.job.git.commit.date>1685729468000</talend.job.git.commit.date>
+    <talend.job.git.commit.date>1685729563000</talend.job.git.commit.date>
     <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>Cleaning_server</talend.job.name>
