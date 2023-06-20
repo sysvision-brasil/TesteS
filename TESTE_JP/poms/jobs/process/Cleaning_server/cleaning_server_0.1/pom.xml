@@ -5,13 +5,13 @@
   <parent>
     <groupId>org.example.teste_jp</groupId>
     <artifactId>code.Master</artifactId>
-    <version>8.0.1</version>
+    <version>2.1.0</version>
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>br.com.tereos.proj_to_tests.job</groupId>
   <artifactId>Cleaning_server</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-  <name>TESTE_JP Cleaning_server-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
+  <version>8.0.1</version>
+  <name>TESTE_JP Cleaning_server-8.0.1 (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -20,7 +20,7 @@
     <talend.job.context>DEV</talend.job.context>
     <talend.job.path>teste_jp</talend.job.path>
     <talend.job.git.commit.id>37597a3fefcbb9decd9fd96e7936b0d8bb65658d</talend.job.git.commit.id>
-    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author>security@company.com</talend.job.git.author>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
@@ -40,7 +40,7 @@
     <talend.project.name>TESTE_JP</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <talend.job.git.commit.date>1685729563000</talend.job.git.commit.date>
-    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>Cleaning_server</talend.job.name>
     <talend.job.finalName>cleaning_server_0_1</talend.job.finalName>
@@ -258,7 +258,7 @@
     <dependency>
       <groupId>org.example.teste_jp.code</groupId>
       <artifactId>routines</artifactId>
-      <version>8.0.1</version>
+      <version>2.1.0</version>
     </dependency>
   </dependencies>
   <build>

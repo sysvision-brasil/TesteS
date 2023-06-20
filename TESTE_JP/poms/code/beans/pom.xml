@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.example.teste_jp</groupId>
     <artifactId>code.Master</artifactId>
-    <version>8.0.1</version>
+    <version>2.1.0</version>
     <relativePath>../../</relativePath>
   </parent>
   <groupId>org.example.teste_jp.bean</groupId>
   <artifactId>beans</artifactId>
-  <version>8.0.1</version>
+  <version>2.1.0</version>
   <name>TESTE_JP Beans</name>
   <properties>
     <talend.codes.package>beans</talend.codes.package>
@@ -21,7 +21,7 @@
     <dependency>
       <groupId>org.example.teste_jp.code</groupId>
       <artifactId>routines</artifactId>
-      <version>8.0.1</version>
+      <version>2.1.0</version>
     </dependency>
   </dependencies>
   <build>

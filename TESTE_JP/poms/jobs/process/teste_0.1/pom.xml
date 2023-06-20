@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.example.teste_jp</groupId>
     <artifactId>code.Master</artifactId>
-    <version>8.0.1</version>
+    <version>2.1.0</version>
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.teste_jp.job</groupId>
@@ -247,7 +247,7 @@
     <dependency>
       <groupId>org.example.teste_jp.code</groupId>
       <artifactId>routines</artifactId>
-      <version>8.0.1</version>
+      <version>2.1.0</version>
     </dependency>
   </dependencies>
   <build>
