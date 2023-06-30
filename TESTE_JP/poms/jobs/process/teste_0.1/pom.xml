@@ -10,8 +10,8 @@
   </parent>
   <groupId>org.example.teste_jp.job</groupId>
   <artifactId>teste</artifactId>
-  <version>8.0.1</version>
-  <name>TESTE_JP teste-8.0.1 (0.1,Job Designs)</name>
+  <version>8.0.1-SNAPSHOT</version>
+  <name>TESTE_JP teste-8.0.1-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -19,8 +19,8 @@
     <talend.job.folder></talend.job.folder>
     <talend.job.context>Default</talend.job.context>
     <talend.job.path>teste_jp</talend.job.path>
-    <talend.job.git.commit.id>5245559465624dff3c19442539ea304065fc43b1</talend.job.git.commit.id>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.job.git.commit.id>550d38a9ef5f782f7b38ad03657c7332589cb6e2</talend.job.git.commit.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author>security@company.com</talend.job.git.author>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
@@ -36,11 +36,11 @@
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.branch.name>main</talend.project.branch.name>
-    <talend.product.version>8.0.1.20230418_1502-patch</talend.product.version>
+    <talend.product.version>8.0.1.20230612_1054-patch</talend.product.version>
     <talend.project.name>TESTE_JP</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <talend.job.git.commit.date>1685712896000</talend.job.git.commit.date>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.job.git.commit.date>1687292171000</talend.job.git.commit.date>
+    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>teste</talend.job.name>
     <talend.job.finalName>teste_0_1</talend.job.finalName>
@@ -49,7 +49,7 @@
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
-      <version>2.4.7</version>
+      <version>2.4.9</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>9.1</version>
+      <version>9.5</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
@@ -159,7 +159,7 @@
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
-      <version>2.4.7</version>
+      <version>2.4.9</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
