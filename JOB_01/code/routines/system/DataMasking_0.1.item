@@ -94,6 +94,50 @@ public class DataMasking {
     }
 
     /**
+     * createMD5: Calculate MD5 hash value from String.
+     *
+     *
+     * {talendTypes} String
+     *
+     * {Category} Data Masking
+     *
+     * {param} string("foo") message: The string need to be masked.
+     *
+     * {example} createMD5("foo") result is acbd18db4cc2f85cedef654fccc4a4d8
+     * 
+     * @deprecated For security reasons, use this method for migration only.
+     *
+     */
+
+    public static String createMD5(String message) {
+        if (message == null) {
+            return "Input String for MD5 calculation is missing"; //$NON-NLS-1$
+        }
+
+        /* Calculation */
+        MessageDigest thisMD5 = null;
+        try {
+            thisMD5 = MessageDigest.getInstance("MD5"); //$NON-NLS-1$
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e.getMessage(), e);
+        }
+        thisMD5.reset();
+        thisMD5.update(message.getBytes());
+        byte[] result = thisMD5.digest();
+
+        /* Return */
+        StringBuffer hexString = new StringBuffer();
+        for (byte element : result) {
+            if (element <= 15 && element >= 0) {
+                hexString.append("0"); //$NON-NLS-1$
+            }
+            hexString.append(Integer.toHexString(0xFF & element));
+        }
+        return hexString.toString();
+
+    }
+
+    /**
      * CreditCard Masking: Masks a 16 digit credit card number with a defined character from 5th to 12th place.
      *
      *
