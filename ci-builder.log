@@ -1,0 +1,897 @@
+OUTPUT>!SESSION 2023-06-21 16:04:09.788 -----------------------------------------------
+OUTPUT>eclipse.buildId=unknown
+OUTPUT>java.version=11.0.18
+OUTPUT>java.vendor=Azul Systems, Inc.
+OUTPUT>BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+OUTPUT>Framework arguments:  -application org.talend.commandline.CommandLine scriptFile script_command_3949929404905114515.txt
+OUTPUT>Command-line arguments:  -application org.talend.commandline.CommandLine -consolelog -data C:\Talend\Work\TesteS-517415160 scriptFile script_command_3949929404905114515.txt
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:04:46.369
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.bd.documentDB//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:04:46.381
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.di.cyberark//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:04:46.489
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.di.rabbitmq//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.emf.ecore 2 0 2023-06-21 16:04:47.866
+OUTPUT>!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'http://www.talend.org/component_cache'
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.emf.ecore 2 0 2023-06-21 16:04:47.872
+OUTPUT>!MESSAGE Both 'org.talend.designer.unitemap' and 'org.talend.designer.unitemap' register a package for 'http://www.talend.org/unitemap'
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:51.961
+OUTPUT>!MESSAGE 2023-06-21 16:04:51,955 INFO  org.talend.commandline.CommandLineApplication  - 
+OUTPUT>!!------------------------------------------------------------------------------!!
+OUTPUT>!!                                                                              !!
+OUTPUT>!!                                    TALEND                                    !!
+OUTPUT>!!   Starting Talend's platform log system.VERSION= 8.0.1.20230418_1502-patch   !!
+OUTPUT>!!                                                                              !!
+OUTPUT>!!------------------------------------------------------------------------------!!
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.commandline 1 0 2023-06-21 16:04:51.972
+OUTPUT>!MESSAGE Starting up Command Line Application
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:51.974
+OUTPUT>!MESSAGE 2023-06-21 16:04:51,973 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\Program Files (x86)\Talend-Studio\studio\configuration\studio.keys
+OUTPUT>
+ERROR>SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+ERROR>SLF4J: Defaulting to no-operation (NOP) logger implementation
+ERROR>SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.223
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,222 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Studio base p2 url is overwrited by: -Dtalend.studio.p2.base=https://update.talend.com/Studio/8/base
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.224
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,223 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Studio update p2 url is overwriten by parameter -Dtalend.studio.p2.update=https://update.talend.com/Studio/8/updates/latest
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.450
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,447 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Force profile OS check: -Dtalend.studio.p2.profileOS.check=true
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.451
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,450 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Start to check profile OS issue.
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.453
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,452 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Remove invalid OS related plugins from config.ini
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.456
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,456 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Remove invalid OS related plugins from bundles.info
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.494
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,491 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Studio base p2 url is overwrited by: -Dtalend.studio.p2.base=https://update.talend.com/Studio/8/base
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.495
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,494 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Studio update p2 url is overwriten by parameter -Dtalend.studio.p2.update=https://update.talend.com/Studio/8/updates/latest
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:04:58.498
+OUTPUT>!MESSAGE 2023-06-21 16:04:58,496 INFO  org.talend.studiolite.p2.core.StudioLiteP2Core  - Fixed profile OS issue.
+OUTPUT>
+OUTPUT>!SESSION 2023-06-21 16:05:13.029 -----------------------------------------------
+OUTPUT>eclipse.buildId=unknown
+OUTPUT>java.version=11.0.18
+OUTPUT>java.vendor=Azul Systems, Inc.
+OUTPUT>BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+OUTPUT>Framework arguments:  -application org.talend.commandline.CommandLine scriptFile script_command_16800803925691461244.txt
+OUTPUT>Command-line arguments:  -application org.talend.commandline.CommandLine -consolelog -data C:\Talend\Work\TesteS-517415160 scriptFile script_command_16800803925691461244.txt
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:05:20.094
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.bd.documentDB//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:05:20.114
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.di.cyberark//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:05:20.222
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.di.rabbitmq//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.emf.ecore 2 0 2023-06-21 16:05:20.962
+OUTPUT>!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'http://www.talend.org/component_cache'
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.emf.ecore 2 0 2023-06-21 16:05:20.967
+OUTPUT>!MESSAGE Both 'org.talend.designer.unitemap' and 'org.talend.designer.unitemap' register a package for 'http://www.talend.org/unitemap'
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.938
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.di.azuredlsgen2_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.942
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.di.neo4jv4importtool_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.950
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.di.neo4j_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.953
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.di.netsuite_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.958
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.di.workday_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.961
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.google.analytics_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.964
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.jms.connector_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.966
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.kudu_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.969
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.samba_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.971
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.tableau_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.974
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tck.zendesk_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.update.configurator 4 0 2023-06-21 16:05:24.977
+OUTPUT>!MESSAGE Unable to access file "C:\Program Files (x86)\Talend-Studio\studio\plugins\org.talend.studio.components.tcompv0.azurestorage_8.0.1.20230418_1502\META-INF\MANIFEST.MF".
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:05:26.392
+OUTPUT>!MESSAGE 2023-06-21 16:05:26,385 INFO  org.talend.commandline.CommandLineApplication  - 
+OUTPUT>!!------------------------------------------------------------------------------!!
+OUTPUT>!!                                                                              !!
+OUTPUT>!!                                    TALEND                                    !!
+OUTPUT>!!   Starting Talend's platform log system.VERSION= 8.0.1.20230418_1502-patch   !!
+OUTPUT>!!                                                                              !!
+OUTPUT>!!------------------------------------------------------------------------------!!
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.talend.commandline 1 0 2023-06-21 16:05:26.403
+OUTPUT>!MESSAGE Starting up Command Line Application
+OUTPUT>
+OUTPUT>!ENTRY org.talend.platform.logging 1 0 2023-06-21 16:05:26.405
+OUTPUT>!MESSAGE 2023-06-21 16:05:26,404 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\Program Files (x86)\Talend-Studio\studio\configuration\studio.keys
+OUTPUT>
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.core.resources 2 10035 2023-06-21 16:05:26.713
+OUTPUT>!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+OUTPUT>!!!Workspace is already in use.You cannot launch the Studio more than once with the same workspace.!!!
+OUTPUT>
+OUTPUT>!ENTRY org.talend.commandline 4 0 2023-06-21 16:05:28.810
+OUTPUT>!MESSAGE Workspace is already in use.You cannot launch the Studio more than once with the same workspace.
+OUTPUT>!STACK 0
+OUTPUT>java.lang.Exception: Workspace is already in use.You cannot launch the Studio more than once with the same workspace.
+OUTPUT>	at org.talend.commandline.CommandLineApplication.checkWorkspace(CommandLineApplication.java:545)
+OUTPUT>	at org.talend.commandline.CommandLineApplication.start(CommandLineApplication.java:166)
+OUTPUT>	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+OUTPUT>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+OUTPUT>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+OUTPUT>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+OUTPUT>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+OUTPUT>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+OUTPUT>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+OUTPUT>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+OUTPUT>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+OUTPUT>	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+OUTPUT>	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+OUTPUT>	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+OUTPUT>	at org.eclipse.equinox.launcher.Main.main(Main.java:1435)
+OUTPUT>	at org.eclipse.core.launcher.Main.main(Main.java:44)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.core.resources 2 10035 2023-06-21 16:05:29.530
+OUTPUT>!MESSAGE The workspace will exit with unsaved changes in this session.
+OUTPUT>!SESSION 2023-06-21 16:06:45.803 -----------------------------------------------
+OUTPUT>eclipse.buildId=unknown
+OUTPUT>java.version=11.0.18
+OUTPUT>java.vendor=Azul Systems, Inc.
+OUTPUT>BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+OUTPUT>Framework arguments:  -application org.talend.commandline.CommandLine scriptFile script_command_16800803925691461244.txt -talendCleanM2 true
+OUTPUT>Command-line arguments:  -application org.talend.commandline.CommandLine -consolelog -data C:\Talend\Work\TesteS-517415160 scriptFile script_command_16800803925691461244.txt -clean -talendCleanM2 true
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:07:09.056
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.bd.documentDB//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1849)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1842)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1747)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1669)
+OUTPUT>	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+OUTPUT>
+OUTPUT>!ENTRY org.eclipse.equinox.registry 4 0 2023-06-21 16:07:09.722
+OUTPUT>!MESSAGE Could not parse XML contribution for "org.talend.studio.components.di.cyberark//plugin.xml". Any contributed extensions and extension points will be ignored.
+OUTPUT>!STACK 0
+OUTPUT>org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; O conteúdo não é permitido no prólogo.
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:978)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+OUTPUT>	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionsParser.parseManifest(ExtensionsParser.java:414)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1081)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.addContribution(ExtensionRegistry.java:1058)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.addBundle(EclipseBundleListener.java:186)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.EclipseBundleListener.processBundles(EclipseBundleListener.java:94)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.onStart(RegistryStrategyOSGI.java:243)
+OUTPUT>	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:740)
+OUTPUT>	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:61)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:143)
+OUTPUT>	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:60)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+OUTPUT>	at java.base/java.security.AccessController.doPrivileged(Native Method)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+OUTPUT>	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:468)
+OUTPUT>	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+OUTPUT>	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+OUTPUT>	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+OUTPUT>	at org.eclipse.osgi.internal.loader.sources.MultiSourcePackage.loadClass(MultiSourcePackage.java:37)
+OUTPUT>	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+OUTPUT>	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+OUTPUT>	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+OUTPUT>	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+OUTPUT>	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+OUTPUT>	at java.base/java.lang.Class.getConstructors(Class.java:1943)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.<init>(ComponentConstructorImpl.java:97)
+OUTPUT>	at org.apache.felix.scr.impl.inject.internal.ComponentMethodsImpl.initComponentMethods(ComponentMethodsImpl.java:110)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:1036)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1054)
+OUTPUT>	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:953)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:674)
+OUTPUT>	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:437)
+OUTPUT>	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:667)
+OUTPUT>	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:305)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:554)
+OUTPUT>	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+OUTPUT>	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+OUTPUT>	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+OUTPUT>	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+OUTPUT>	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+OUTPUT>	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:945)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+OUTPUT>	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:232)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:138)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:130)
+OUTPUT>	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+OUTPUT>	at org.eclipse.osgi.container.Module.publishEvent(Module.java:499)
+OUTPUT>	at org.eclipse.osgi.container.Module.start(Module.java:486)
